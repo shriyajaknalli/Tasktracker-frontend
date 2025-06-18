@@ -10,7 +10,6 @@ import { BillComponent } from './pages/bill/bill.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
     InventoryComponent,
     CustomerComponent,
     HomeComponent,
@@ -21,6 +20,6 @@ import { BillComponent } from './pages/bill/bill.component';
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: []
 })
 export class AppModule { }

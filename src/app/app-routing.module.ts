@@ -8,7 +8,7 @@ import { BillComponent } from './pages/bill/bill.component';
 const routes: Routes = [
   {path:'',redirectTo:'home',pathMatch:'full'},
   {path: 'home',component:HomeComponent},
-  {path:'**', redirectTo: 'home', pathMatch: 'full'} , // Catch-all route
+  // {path:'**', redirectTo: 'home', pathMatch: 'full'} , // Catch-all route
   {path:'inventory', component: InventoryComponent},
   {path: 'customer', component: CustomerComponent},
   {path: 'bill', component:BillComponent}
