@@ -1,0 +1,23 @@
+
+<div class="task-tracker-container">
+    <div class="left-pane">
+        <h2>Create a Task</h2>
+        <app-task-form></app-task-form>
+    </div>
+<div class="right-pane">
+    <h2>All Tasks</h2>
+    <div class="task-list">
+        <div class="task-card" *ngFor="let task of tasks">
+            <div class="task-header">
+          <strong>{{ task.tittle || '(No Title)' }}</strong>
+         <button (click)="toggleCompleted(task)">
+           <span *ngIf="task.completed">✅</span>
+             <span *ngIf="!task.completed">❌</span>
+         </button>
+         <p class="description">{{ task.description }}</p>
+          
+        </div>
+    </div>
+</div>
+</div>
+</div>

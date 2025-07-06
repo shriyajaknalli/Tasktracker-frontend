@@ -1,0 +1,15 @@
+
+<form class="form-class" (ngSubmit)="onSubmit()">
+  <label>Title:</label>
+ <input type="text" [(ngModel)]="task.tittle" name ="tittle" required/>
+
+ <label> Description:</label>
+    <input type="text" [(ngModel)]="task.description" name="description" required/>
+
+      <label>
+    <input type="checkbox" [(ngModel)]="task.completed" name="completed" />
+    Completed
+  </label>
+
+   <button type="submit">Add Task</button>
+</form>
