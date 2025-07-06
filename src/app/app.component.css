@@ -1,3 +1,23 @@
+.app-container {
+ padding: 20px;
+  border: 2px solid #f8bbd0; /* Light pink border */
+  border-radius: 10px;
+  background-color: #fff3e0; 
+}
+
+.task-item{
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #f48fb1; /* Pink border */
+  border-radius: 5px;
+  background-color: #fce4ec;
+}
+
+.task-item.completed{
+  text-decoration: line-through;
+  color: #9c27b0;
+}
+
 .task-tracker-container {
   display: flex;
   gap: 32px;
@@ -40,18 +60,9 @@
 }
 
 .task-header {
-  /* display: flex; */
   justify-content: space-between;
   align-items: flex-start;
   font-size: 18px;
-}
-
-.status-icon.done {
-  color: green;
-}
-
-.status-icon.pending {
-  color: red;
 }
 
 .description {
