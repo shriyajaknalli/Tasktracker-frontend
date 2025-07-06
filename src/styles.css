@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #ffe6f2; /* Light pink background */
+  color: #6a1b9a; /* Deep purple text */
+}
+
+button {
+  background-color: #ff80ab; /* Pink button background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #f06292; /* Slightly darker pink on hover */
+}
+
+h1, h2, h3 {
+  font-family: 'Pacifico', cursive; /* Playful font for headings */
+  color: #d81b60; /* Bright pink for headings */
+}
+
+a {
+  color: #ba68c8; /* Purple links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

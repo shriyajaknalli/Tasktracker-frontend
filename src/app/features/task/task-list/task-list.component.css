@@ -1,0 +1,33 @@
+.form-class {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.task-card {
+    padding: 16px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.task-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.status-icon {
+    font-size: 18px;
+}
+
+.description {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #555;
+}
