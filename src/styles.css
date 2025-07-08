@@ -6,10 +6,11 @@ body {
 }
 
 button {
-  /* background-color: #ff80ab; Pink button background */
+  background-color: #ff80ab; /* Pink button background */
   color: white;
   border: none;
   border-radius: 5px;
+  padding: 10px 20px;
   cursor: pointer;
   font-size: 16px;
 }

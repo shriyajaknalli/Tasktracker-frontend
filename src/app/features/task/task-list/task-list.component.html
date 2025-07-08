@@ -1,12 +1,4 @@
 <div class="task-list">
-
-    <!-- Create Task Form -->
-  <app-task-form 
-    [mode]="'create'"
-    (formSubmit)="onCreateTask($event)">
-  </app-task-form>
-
-<!-- Task Cards -->
   <div class="task-card" *ngFor="let task of tasks">
     <div class="task-header">
       <strong>{{ task.title || '(No Title)' }}</strong>
@@ -14,19 +6,7 @@
         <span *ngIf="task.completed">✅</span>
         <span *ngIf="!task.completed">❌</span>
       </button>
-      <button class="edit-button" (click)="onEdit(task)">
-        <span class="edit-icon">✏️</span>
-      </button>
     </div>
     <p class="description">{{ task.description }}</p>
-  </div>
-
-    <!-- Edit Task Form -->
-  <div *ngIf="showEditForm">
-    <app-task-form 
-      [taskToEdit]="selectedTaskToEdit"
-      [mode]="'edit'"
-      (formSubmit)="onSaveEdit($event)">
-    </app-task-form>
   </div>
 </div>
